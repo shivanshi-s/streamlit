@@ -1,4 +1,21 @@
-/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #81df8e;
+}
+
+h2 {
+    color: #0f9344;
+}
+
+p {
+    font-size: 18px;
+}
+
+
 .content {
     padding: 20px;
     text-align: center;
