@@ -39,13 +39,13 @@ def page():
     st.title("Soil Analysis and Crop Recommendation")
 
     # Input fields
-    nitrogen = st.number_input("Nitrogen", min_value=0.0, step=1)
-    phosphorus = st.number_input("Phosphorus", min_value=0.0, step=1)
-    potassium = st.number_input("Potassium", min_value=0.0, step=1)
-    temperature = st.number_input("Temperature (°C)", min_value=0.0, step=1)
-    humidity = st.number_input("Humidity (%)", min_value=0.0, step=1)
-    ph = st.number_input("pH", min_value=0.0, step=1)
-    rainfall = st.number_input("Rainfall (mm)", min_value=0.0, step=1)
+    nitrogen = st.number_input("Nitrogen", min_value=0.0, step=0.1)
+    phosphorus = st.number_input("Phosphorus", min_value=0.0, step=0.1)
+    potassium = st.number_input("Potassium", min_value=0.0, step=0.1)
+    temperature = st.number_input("Temperature (°C)", min_value=0.0, step=0.1)
+    humidity = st.number_input("Humidity (%)", min_value=0.0, step=0.1)
+    ph = st.number_input("pH", min_value=0.0, step=0.1)
+    rainfall = st.number_input("Rainfall (mm)", min_value=0.0, step=0.1)
 
     if st.button("Analyze and Recommend"):
         recommended_crop = recommend_crop(nitrogen, phosphorus, potassium, temperature, humidity, ph, rainfall)
