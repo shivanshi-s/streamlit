@@ -1,24 +1,32 @@
-
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background to contrast with Streamlit's dark theme */
+    color: #333; /* Ensure text is readable against the light background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-h1 {
+h1, h2 {
     color: #81df8e;
-}
-
-h2 {
-    color: #0f9344;
+    text-align: center;
 }
 
 p {
     font-size: 18px;
+    text-align: center;
+    color: #f9eded;
 }
-
 
 .content {
     padding: 20px;
     text-align: center;
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Ensure content is responsive */
 }
 
 .grid-container {
@@ -26,22 +34,36 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     margin-top: 20px;
+    width: 100%;
 }
 
 .grid-item {
-    background-color: #f2f2f2;
+    background-color: #1c5869; 
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border-radius: 5px; /* Rounded corners for a softer look */
 }
 
 .grid-item img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
-footer {
-    background-color: #333;
+.contact-button {
+    background-color: #0f9344;
     color: white;
-    padding: 20px;
+    padding: 15px 32px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0f7a3d;
 }
