@@ -18,7 +18,10 @@ def display_weather(city):
 
 def page():
     st.title("India Weather App")
-    display_weather('New Delhi, IN')
+    # Provide a unique key for the text input widget
+    city = st.text_input('Enter a city name:', 'New Delhi, IN', key='unique_city_input')
+    if st.button('Get Weather', key='unique_get_weather_button'):
+        display_weather(city)
 
 # Call the page function to render the app
 # page()
