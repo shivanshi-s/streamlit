@@ -12,10 +12,12 @@ mgr = owm.weather_manager()
 def display_weather(city):
     obs = mgr.weather_at_place(city)
     weather = obs.weather
+    # st.write(weather)
     st.write(f"### Weather in {city}")
     st.write(f"#### Temperature: {weather.temperature('celsius')['temp']}°C")
     st.write(f"#### Description: {weather.detailed_status}")
     st.write(f"#### Wind Speed: {weather.wind()['speed']} m/s")
+
 
 def display_map(city):
     # Fetch the coordinates for the city
