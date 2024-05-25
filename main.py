@@ -42,7 +42,7 @@ def render_landing_page():
             <img src='https://www.agrivi.com/wp-content/uploads/2017/01/Blog-Soil-Analysis.jpg' alt='Feature'>
             <h4>Soil Analysis</h4>
             <p>Soil quality is a fundamental factor in agriculture, and smart farming leverages AI and ML to optimize soil analysis. </p>
-            <a href='#' onclick="location.href='pages/feature.py';">Learn More</a>
+            
         </div>
         """, unsafe_allow_html=True)
     st.markdown(f"""
@@ -50,7 +50,7 @@ def render_landing_page():
             <img src='https://www.rsipvision.com/wp-content/uploads/2018/12/Farmer-using-tablet-corn-planting.jpg' alt='Feature'>
             <h4>Crop Prediction</h4>
             <p>Machine learning algorithms can find and figure out the right crops that can be planted based on the contents of soil and weather data.</p>
-            <a href='#' onclick="location.href='pages/feature.py';">Learn More</a>
+            
         </div>
         """, unsafe_allow_html=True)
     st.markdown(f"""
@@ -58,7 +58,7 @@ def render_landing_page():
             <img src='https://blog.plantwise.org/wp-content/uploads/sites/7/2022/02/CAI_focusimage-1-1024x622.jpg' alt='Feature'>
             <h4>Crop Health Prediction</h4>
             <p>AI and ML have revolutionized crop health monitoring, enabling real-time detection of diseases, pests, and stress factors. Advanced image recognition and sensor technologies facilitate the early identification of crop issues. </p>
-            <a href='#' onclick="location.href='pages/feature.py';">Learn More</a>
+            
         </div>
         """, unsafe_allow_html=True)
     st.markdown(f"""
@@ -66,7 +66,7 @@ def render_landing_page():
             <img src='https://pureecoindia.in/wp-content/uploads/2021/07/Dry-soil-and-green-landscape-juxtaposition-Pure-Eco-India.jpg' alt='Feature'>
             <h4>Real time Climate Analysis</h4>
             <p>As climate change disrupts traditional weather patterns, smart farming integrates AI and ML for climate change adaptation and crop prediction. These technologies use historical climate data and real-time weather information to forecast growing conditions,</p>
-            <a href='#' onclick="location.href='pages/feature.py';">Learn More</a>
+            
         </div>
         """, unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
